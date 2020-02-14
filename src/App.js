@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.scss';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import Navbar from './components/Navbar/Navbar.js'
+import Navbar from './components/Navbar/Navbar.js';
+import TourList from './components/TourList'
 
 
-function App() {
-  return (
-    <React.Fragment>
-      <Navbar />
-    </React.Fragment>
-    
-  );
+
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Navbar />
+        <TourList />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
